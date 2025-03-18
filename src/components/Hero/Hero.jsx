@@ -13,6 +13,7 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
   const themeIcon =
     theme === "light" ? mdiWhiteBalanceSunny : mdiMoonWaningCrescent;
+  const socialIconColor = theme === "light" ? "#000" : "#fff";
 
   return (
     <section id="hero" className={styles.container}>
@@ -41,19 +42,21 @@ function Hero() {
             href="https://www.linkedin.com/in/okan-altun-478a30336/"
             target="_blank"
           >
-            <Icon path={mdiLinkedin} size={1} color="#000" />
+            <Icon path={mdiLinkedin} size={1} color={socialIconColor} />
           </a>
           <a href="https://github.com/itsYuuuka" target="_blank">
-            <Icon path={mdiGithub} size={1} color="#000" />
+            <Icon path={mdiGithub} size={1} color={socialIconColor} />
           </a>
           <a
             href="https://open.spotify.com/user/wm9hzk1b3o0vt02yjmk683jrj?si=779e88c2fdd84ebf"
             target="_blank"
           >
-            <Icon path={mdiSpotify} size={1} color="#000" />
+            <Icon path={mdiSpotify} size={1} color={socialIconColor} />
           </a>
         </span>
-        <p>With a passion for developing modern web apps.</p>
+        <p className={styles.description}>
+          With a passion for developing modern web apps.
+        </p>
         <a href={CV} download>
           <button className="hover">My Resume</button>
         </a>
