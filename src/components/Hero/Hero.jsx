@@ -2,12 +2,18 @@ import styles from "./HeroStyles.module.css";
 import profileImg from "../../assets/profile-picture.png";
 import Icon from "@mdi/react";
 import { mdiWhiteBalanceSunny } from "@mdi/js";
+import { mdiMoonWaningCrescent } from "@mdi/js";
 import { mdiLinkedin } from "@mdi/js";
 import { mdiGithub } from "@mdi/js";
 import { mdiSpotify } from "@mdi/js";
 import CV from "../../assets/Okan-Altun-cv.pdf";
+import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
+  const { theme, toggleTheme } = useTheme();
+  const themeIcon =
+    theme === "light" ? mdiWhiteBalanceSunny : mdiMoonWaningCrescent;
+
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
@@ -17,9 +23,10 @@ function Hero() {
           alt="Profile Picture of Okan Altun"
         />
         <Icon
-          path={mdiWhiteBalanceSunny}
+          path={themeIcon}
           size={1}
           className={styles.colorMode}
+          onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>
@@ -34,23 +41,21 @@ function Hero() {
             href="https://www.linkedin.com/in/okan-altun-478a30336/"
             target="_blank"
           >
-            <Icon path={mdiLinkedin} size={1} color="#000"/>
+            <Icon path={mdiLinkedin} size={1} color="#000" />
           </a>
           <a href="https://github.com/itsYuuuka" target="_blank">
-            <Icon path={mdiGithub} size={1} color="#000"/>
+            <Icon path={mdiGithub} size={1} color="#000" />
           </a>
           <a
             href="https://open.spotify.com/user/wm9hzk1b3o0vt02yjmk683jrj?si=779e88c2fdd84ebf"
             target="_blank"
           >
-            <Icon path={mdiSpotify} size={1} color="#000"/>
+            <Icon path={mdiSpotify} size={1} color="#000" />
           </a>
         </span>
         <p>With a passion for developing modern web apps.</p>
         <a href={CV} download>
-          <button className="hover">
-            My Resume
-          </button>
+          <button className="hover">My Resume</button>
         </a>
       </div>
     </section>
