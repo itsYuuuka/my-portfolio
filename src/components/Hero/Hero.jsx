@@ -13,7 +13,7 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
   const themeIcon =
     theme === "light" ? mdiWhiteBalanceSunny : mdiMoonWaningCrescent;
-  const iconColor = theme === "light" ? "#000" : "#fff";
+  const socialIconColor = theme === "light" ? "#000" : "#fff";
 
   return (
     <section id="hero" className={styles.container}>
@@ -28,7 +28,7 @@ function Hero() {
           size={1}
           className={styles.colorMode}
           onClick={toggleTheme}
-          color={iconColor}
+          color="var(--text-color)"
         />
       </div>
       <div className={styles.info}>
@@ -43,16 +43,16 @@ function Hero() {
             href="https://www.linkedin.com/in/okan-altun-478a30336/"
             target="_blank"
           >
-            <Icon path={mdiLinkedin} size={1} color={iconColor} />
+            <Icon path={mdiLinkedin} size={1.5} color={socialIconColor} />
           </a>
           <a href="https://github.com/itsYuuuka" target="_blank">
-            <Icon path={mdiGithub} size={1} color={iconColor} />
+            <Icon path={mdiGithub} size={1.5} color={socialIconColor} />
           </a>
           <a
             href="https://open.spotify.com/user/wm9hzk1b3o0vt02yjmk683jrj?si=779e88c2fdd84ebf"
             target="_blank"
           >
-            <Icon path={mdiSpotify} size={1} color={iconColor} />
+            <Icon path={mdiSpotify} size={1.5} color={socialIconColor} />
           </a>
         </span>
         <p className={styles.description}>
