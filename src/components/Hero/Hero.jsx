@@ -56,7 +56,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern web apps.
+          Driven by a passion for both frontend and backend development, I’m on
+          a journey to become a full-stack developer.
         </p>
         <a href={CV} download>
           <button className="hover">My Resume</button>
