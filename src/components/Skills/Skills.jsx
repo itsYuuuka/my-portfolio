@@ -21,6 +21,10 @@ function Skills() {
           src={mdiCheckCircleOutline}
           skill="React (in progress)"
         ></SkillList>
+        <SkillList
+          src={mdiCheckCircleOutline}
+          skill="Angular (in progress)"
+        ></SkillList>
       </div>
       <hr />
 
