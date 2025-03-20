@@ -86,3 +86,10 @@
     justify-content: space-evenly;
   }
 }
+
+@media (max-width: 800px) {
+  .container {
+    margin-top: 2rem;
+    height: auto;      
+  }
+}
