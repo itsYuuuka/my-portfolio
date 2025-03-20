@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import profileImg from "../../assets/profile-picture.png";
+import profileImg from "../../assets/profile-picture.PNG";
 import Icon from "@mdi/react";
 import { mdiWhiteBalanceSunny } from "@mdi/js";
 import { mdiMoonWaningCrescent } from "@mdi/js";
