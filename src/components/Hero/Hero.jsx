@@ -48,16 +48,17 @@ function Hero() {
           <a href="https://github.com/itsYuuuka" target="_blank">
             <Icon path={mdiGithub} size={1.5} color={socialIconColor} />
           </a>
-          <a
+          {/* <a
             href="https://open.spotify.com/user/wm9hzk1b3o0vt02yjmk683jrj?si=779e88c2fdd84ebf"
             target="_blank"
           >
             <Icon path={mdiSpotify} size={1.5} color={socialIconColor} />
-          </a>
+          </a> */}
         </span>
         <p className={styles.description}>
-          Driven by a passion for both frontend and backend development, I’m on
-          a journey to become a full-stack developer.
+          As a full-stack developer with a passion for both frontend and backend
+          development, I’m continuously expanding my skills to build seamless,
+          end-to-end digital experiences.
         </p>
         <a href={CV} download>
           <button className="hover">My Resume</button>
