@@ -3,6 +3,7 @@ import sessionConnect from "../../assets/SCLogo_blue.svg";
 import cinemaProject from "../../assets/cinema-project.svg";
 import badUiChallenge from "../../assets/bad-ui-challenge.svg";
 import iMock from "../../assets/i-mock.svg";
+import zentry from "../../assets/zentry.svg";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -34,6 +35,12 @@ function Projects() {
           link={"https://github.com/itsYuuuka/i-mock"}
           h3="iMock"
           p="Recreated from the ground up, iMock mirrors the iconic iPhone site. It’s not innovation — it’s imitation at its finest."
+        />
+        <ProjectCard
+          src={zentry}
+          link={"https://github.com/itsYuuuka/react-zentry-ui"}
+          h3="Zentry"
+          p="Zentry is a React-based project that closely replicates the design and aesthetic of the official Zentry website, showcasing modern UI principles and responsive, high-performance components."
         />
       </div>
     </section>
