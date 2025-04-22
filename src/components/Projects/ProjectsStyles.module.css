@@ -39,6 +39,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 30px;
     padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projectsContainer a {
+    flex: 0 1 calc(33.333% - 30px);
+    min-width: 250px;
+    max-width: 300px;
+    width: calc(33.333% - 30px);
   }
 }
