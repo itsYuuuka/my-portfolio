@@ -60,6 +60,7 @@ function Skills() {
       <div className={styles.skillList}>
         <SkillList src={mdiCheckCircleOutline} skill="Vuetify" />
         <SkillList src={mdiCheckCircleOutline} skill="Bootstrap" />
+        <SkillList src={mdiCheckCircleOutline} skill="Tailwind CSS" />
       </div>
     </section>
   );
