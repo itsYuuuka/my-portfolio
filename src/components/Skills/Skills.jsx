@@ -15,11 +15,11 @@ function Skills() {
         <SkillList src={mdiCheckCircleOutline} skill="Vue.js"></SkillList>
         <SkillList
           src={mdiCheckCircleOutline}
-          skill="TypeScript (in Progress)"
+          skill="TypeScript"
         ></SkillList>
         <SkillList
           src={mdiCheckCircleOutline}
-          skill="React (in progress)"
+          skill="React"
         ></SkillList>
         <SkillList
           src={mdiCheckCircleOutline}
